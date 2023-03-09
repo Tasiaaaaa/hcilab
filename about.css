@@ -1,0 +1,165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+    position: fixed;
+    z-index: 5;
+}
+
+.logo-menu{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    opacity: .7;
+    display: flex;
+    font-size: large;
+}
+
+.logo img{
+    padding: 2%;
+    width: 15vw;
+    height: 10vh;
+}
+
+
+.menu{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 5vw;
+    margin-left: 5vw;
+}
+
+.menu-button a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+    transition: all 200ms;
+    width: auto;
+}
+
+.menu-button a:hover{
+    opacity: 1;
+    border-top: .3vw solid #6FE5FF;
+    border-bottom: 0 solid transparent;
+}
+
+/* SECTION ONE */
+.section-one{
+    background-image: url(aboutAsset/section1.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.available-info h1{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    position: absolute;
+    left: 50%;
+    top: 70%;
+    transform: translate(-50%, -70%);
+}
+
+.available-info h4{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translate(-50%, -80%);
+}
+
+/* SECTION TWO */
+.section-two{
+    background-image: url(aboutAsset/section2.png);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 500vh;
+    position: relative;
+}
+
+.game-features-title {
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+}
+
+.game-features-title h1{
+    margin: 10% 0 10% 0;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.game-features{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #6FE5FF; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 80%;
+}
+
+.features1{
+    background-image: url(aboutAsset/features1.png);
+    background-size: 100% 100%;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    height: 80vh;
+}
+
+.features2{
+    background-image: url(aboutAsset/features2.png);
+    background-size: 100% 100%;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    height: 80vh;
+}
+
+.features3{
+    background-image: url(aboutAsset/features3.png);
+    background-size: 100% 100%;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    height: 80vh;
+}
+
+.features4{
+    background-image: url(aboutAsset/features4.png);
+    background-size: 100% 100%;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    height: 80vh;
+}
+
+.features5{
+    background-image: url(aboutAsset/features5.png);
+    background-size: 100% 100%;
+    position: relative;
+    justify-content: center;
+    width: 85%;
+    height: 80vh;
+}
+
+/* FOOTER */
+.footer{
+    background-image: url(homeAsset/Footer.png);
+    background-size: 100% 100%;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}

@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SECTION ONE */
+.section-one{
+    background-image: url(homeAsset/home.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* FOOTER */
+.footer{
+    background-image: black;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.footer img{
+    display: flex;
+    position: relative;
+    width: 100%;
+}

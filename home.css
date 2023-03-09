@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* NAVIGATION BAR */
+
+.nav {
+    position: fixed;
+    z-index: 5;
+}
+
+.logo-menu{
+    position: fixed;
+    background-color: black;
+    width: 100%;
+    opacity: .7;
+    display: flex;
+    font-size: large;
+}
+
+.logo img{
+    padding: 2%;
+    width: 15vw;
+    height: 10vh;
+}
+
+
+.menu{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 5vw;
+    margin-left: 5vw;
+}
+
+.menu-button a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+    transition: all 200ms;
+    width: auto;
+}
+
+.menu-button a:hover{
+    opacity: 1;
+    border-top: .3vw solid #6FE5FF;
+    border-bottom: 0 solid transparent;
+}
+
+/* SECTION ONE */
+.section-one{
+    background-image: url(homeAsset/home.jpg);
+    background-size: cover;
+    width: 100%;
+    z-index: 3;
+    position: relative;
+}
+
+.teen-warning img{
+    position: absolute;
+    justify-content: left;
+    bottom: 0;
+}
+
+.play{
+    z-index: 5;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+}
+
+.play:hover .play1 {
+    opacity: 0;
+}
+
+.play:hover .play2 {
+    opacity: 1;
+}
+
+.play1{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+    opacity: 1;
+    transition: all 200ms;
+}
+
+.play2{
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -45%);
+    opacity: 0;
+    transition: all 200ms;
+}
+
+.release{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -60%);
+}
+
+.release h1{
+    color: white;
+    text-shadow: 1px 1px 5px black;
+}
+
+.section-one .download{
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-one .download-icon{
+    margin-top: 40vh;
+    opacity: .5;
+}
+
+.section-one .download-icon img {
+    width: 100%;
+}
+
+.section-one .download-icon:hover{
+    opacity: 1;
+}
+
+/* SECTION TWO */
+.section-two{
+    background-image: url(homeAsset/bar.webp);
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+}
+
+.new-character1 img{
+    display: absolute;
+    width: 100%;
+}
+
+.slider1 img{
+    position: absolute;
+    bottom: 40%;
+    left: 40%;
+    transform: translate(-40%, -40%);
+    display: flex;
+    z-index: 5;
+    opacity: 1;
+}
+
+
+/* SECTION THREE */
+.section-three{
+    background-image: black;
+    background-size: 100% 100%;
+    width: 100%;
+    position: relative;
+}
+
+.section-three img{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
+
+
+/* FOOTER */
+.footer{
+    background-image: black;
+    background-size: 100% 100%;
+    width: 100%;
+}
+
+.footer img{
+    display: flex;
+    position: relative;
+    width: 100%;
+}
