@@ -4,81 +4,267 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Page Jenshin</title>
     <link rel="stylesheet" href="about.css">
+    <title>About Page Jenshin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,50;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class = "nav">
-        <div class="logo-menu">
-            <div class="logo">
-                <img src="homeAsset/Jenshin.png" alt="Jenshin Impactz">
-            </div>
-            <div class="menu">
-                <div class="menu-button">
-                    <a href="home.html">HOME</a>
-                </div>
-
-                <div class="menu-button">
-                    <a href="character.html">CHARACTER</a>
-                </div>
-
-                <div class="menu-button">
-                    <a href="register.html">REGISTER</a>
-                </div>
-
-                <div class="menu-button">
-                    <a href="map.html">MAPS</a>
-                </div>
-
-                <div class="menu-button">
-                    <a href="about.html">ABOUT</a>
-                </div>
-
-            </div>
+    <div class="logo-menu">
+        <div class="hamburger-menu">
+            <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                <img src="homeAsset/hamburger-menu.png" alt="">
+              </a>
         </div>
+        <div class="logo">
+            <img src="aboutAsset/LogoJenshinImpekz.png" alt="Jenshin Impactz">
+        </div>
+        
+        <div class="menu">
+            <div class="menu-button">
+                <a href="home.html">HOME</a>
+            </div>
+            
+            <div class="menu-button">
+                <a href="character.html">CHARACTER</a>
+            </div>
+            
+            <div class="menu-button">
+                <a href="register.html">REGISTER</a>
+            </div>
+            
+            <div class="menu-button">
+                <a href="map.html">MAPS</a>
+            </div>
+            
+            <div class="menu-button">
+                <a href="about.html">ABOUT</a>
+            </div> 
+        </div>
+        
     </div>
 
+    <div class="drop-down active" id="dropdown">
+        <a href="home.html">HOME</a>
+        <a href="character.html">CHARACTER</a>
+        <a href="register.html">REGISTER</a>
+        <a href="map.html">MAPS</a>
+        <a href="about.html" class="about">ABOUT</a>
+    </div>
+            
     <div class="section-one">
-        <div class="available-info">
-            <div class="available">
-                <h1>Available on Multiple Platforms</h1>
-            </div>
-            <div class="hour">
-                <h4>9/28/2020 10:00:00 (UTC+8)</h4>
+        <div class="blur">
+            <div class="available-info">
+                <div class="available">
+                    <h1>Available on Multiple Platforms</h1>
+                </div>
+                <div class="hour">
+                    <h3>9/28/2020 10:00:00 (UTC+8)</h3>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="section-two">
-        <div class="game-features-title">
-            <h1>Game Features</h1>
-        </div>
-
-        <div class="game-features">
-            <div class="features1">
-                <!-- <img src="aboutAsset/features1.png" alt="Feature 1"> -->
+        <!-- <div class="blur2"> -->
+            <div class="game-video">
+                <div class="judul-video">
+                    <div class="judul-video-kiri">
+                        <img src="assets/pseudo-kiri.png" alt="">
+                    </div>
+                    <div class="judul-video-tengah">
+                        <h1>Game Videos</h1>
+                    </div>
+                    <div class="judul-video-kanan">
+                        <img src="assets/pseudo-kanan.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="video">
+                    <img src="aboutAsset/video1.png" alt="">
+                    <img src="aboutAsset/video2.png" alt="">
+                    <img src="aboutAsset/video3.png" alt="">
+                    <img src="aboutAsset/video4.png" alt="">
+                    <img src="aboutAsset/video5.png" alt="">
+                </div>
             </div>
             
-            <div class="features2">
-                <!-- <img src="aboutAsset/features2.png" alt="Feature 2"> -->
+            <div class="game-features">
+                <div class="judul-features">
+                    <div class="judul-features-kiri">
+                        <img src="assets/pseudo-kiri.png" alt="">
+                    </div>
+                    <div class="judul-features-tengah">
+                        <h1>Game Features</h1>
+                    </div>
+                    <div class="judul-features-kanan">
+                        <img src="assets/pseudo-kanan.png" alt="">
+                    </div>
+                </div>
+
+                <div class="box-features">
+                    <div class="kiri-kanan">
+                        <div class="features1">
+                            <div class="box-desc">
+                                <div class="judul-desc">
+                                    <h1>An Epic Fantasy Adventure</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Experience an immersive single-player campaign. As a traveler from another world, you will embark on a journey to reunite with your long-lost sibling and unravel the mysteries of Teyvat, and yourself.</p>
+                                </div>
+                            </div>
+                            <div class="gambar">
+                                <img src="assets/features1.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="features2">
+                            <div class="box-desc2">
+                                <div class="judul-desc">
+                                    <h1>Your World to Discover</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Fly across the open world, swim through crystal-clear waters, and climb towering mountains. Stray off the beaten path to discover all the hidden secrets of a world full of wonder and mystery.</p>
+                                </div>
+                            </div>
+                            <div class="gambar2">
+                                <img src="assets/features2.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="features3">
+                            <div class="box-desc3">
+                                <div class="judul-desc">
+                                    <h1>Travel Alone or Battle Together</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Charge head-on into battles solo, or invite friends to join the fight against dangerous monsters with 4-player cross-play for PS4, iOS, Android, and PC.</p>
+                                </div>
+                            </div>
+                            <div class="gambar">
+                                <img src="assets/features3.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="features4">
+                            <div class="box-desc4">
+                                <div class="judul-desc">
+                                    <h1>Master the Seven Elements</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Not just another mindless hack and slash. Manipulating the various elements is the key to defeating powerful enemies and solving challenging puzzles.</p>
+                                </div>
+                            </div>
+                            <div class="gambar2">
+                                <img src="assets/features4.jpg" alt="">
+                            </div>
+                        </div>
+                        
+                        <div class="features5">
+                            <div class="box-desc5">
+                                <div class="judul-desc">
+                                    <h1>Build Your Dream Team</h1>
+                                </div>
+                                <div class="desc">
+                                    <p>Choose who fights by your side. Build your party from over 20+ characters (with more to come) — each with unique abilities, personalities, and combat styles.</p>
+                                </div>
+                            </div>
+                            <div class="gambar">
+                                <img src="assets/features5.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn-view-characters">
+                    <div class="view-characters">
+                        <a href="character.html" class="btn-characters">
+                            <h4>View Characters</h4>
+                        </a>
+                        </div>
+                    </div>
             </div>
 
-            <div class="features3">
-                <!-- <img src="aboutAsset/features3.png" alt="Feature 3"> -->
+            <div class="game-screenshots">
+                <div class="judul-screenshots">
+                    <div class="judul-screenshots-kiri">
+                        <img src="assets/pseudo-kiri.png" alt="">
+                    </div>
+                    <div class="judul-screenshots-tengah">
+                        <h1>Game Screenshots</h1>
+                    </div>
+                    <div class="judul-screenshots-kanan">
+                        <img src="assets/pseudo-kanan.png" alt="">
+                    </div>
+                </div>
+
+                <div class="screenshots">
+                    <div class="kanan-kiri">
+                        <div class="btn-prev" id="prev">
+                            <img src="assets/prev.png" alt="">
+                        </div>
+                        <div class="gambar-slider" id="img_background" >
+                            <img src="" alt="" id="img">
+                        </div>
+                        <div class="btn-next" id="next">
+                            <img src="assets/next.png" alt="">
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="features4">
-                <!-- <img src="aboutAsset/features4.png" alt="Feature 4"> -->
+            <div class="before-footer">
+                <div class="img">
+                    <img src="aboutAsset/LogoJenshinImpekz.png" alt="Jenshin Impactz">
+                </div>
+                <div class="start">
+                    <p>START THE JOURNEY NOW!</p>
+                </div>
+                <div class="the">
+                    <p><hr>The New Open World Title from HoYoverse<hr></p>
+                </div>
             </div>
-
-            <div class="features5">
-                <!-- <img src="aboutAsset/features5.png" alt="Feature 5"> -->
-            </div>
-        </div>
+        <!-- </div> -->
     </div>
 
     <div class="footer">
-        <!-- <img src="homeAsset/footer.png" alt="Footer"> -->
+        <div class="logoImg">
+            <img src="aboutAsset/LogoJenshinImpekz.png" alt="Jenshin Impactz">
+        </div>
+        
+        <div class="box">
+            <div class="privacy">
+                <p>Privacy Policy</p>
+            </div>
+            <div class="terms">
+                <p>Terms of Service</p>
+            </div>
+            <div class="about">
+                <p>About Us</p>
+            </div>
+            <div class="contact">
+                <p>Contact Us</p>
+            </div>
+        </div>
+        
+        <div class="imgTeen2">
+            <img src="assets/teenEsrb.png" alt="">
+        </div>
+        
+        <div class="sentence">
+            <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
+            <p>Epic, Epic Games, Epic games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
+        </div>
+
+        <div class="hoyo">
+            <img src="assets/hoyoverse.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright. All Rights Reserved.</p>
+        </div>
     </div>
+    <script src="about.js"></script>
 </body>
 </html>

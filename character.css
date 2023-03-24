@@ -3,26 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 /* NAVIGATION BAR */
-
-.nav {
-    position: fixed;
-    z-index: 5;
-}
-
 .logo-menu{
     position: fixed;
-    background-color: black;
+    background-image: url('assets/Section\ 1.png');
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    opacity: .7;
+    height: 11vh;
     display: flex;
-    font-size: large;
+    gap: 5vw;
+}
+
+.logo {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img{
-    padding: 2%;
-    width: 15vw;
-    height: 10vh;
+    width: 70%;
+    height: 9vh;
+}
+
+.menu{
+    align-items: center;
+    display: flex;
+    width: 100%;
+    gap: 5vw;
+}
+
+.menu-button a{
+    text-decoration: none;
+    color: white;
+    opacity: .5;
+    transition: all 200ms;
+    width: auto;
+}
+
+.menu-button a:hover{
+    opacity: 1;
+    border-top: .3vw solid #6FE5FF;
+    border-bottom: 0 solid transparent;
 }
 
 /* SECTION ONE */
