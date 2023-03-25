@@ -64,3 +64,15 @@ prev.addEventListener("click", () => {
     circle.src = 'homeAsset/circle-img-dehya.png';
     play.src = 'homeAsset/dehya tombol play.png';
 })
+
+function openNav() {
+    let bav = document.getElementById("dropdown");
+
+    if(bav.className === "drop-down")
+    {
+        bav.className += " active"
+    }else{
+        bav.className = "drop-down"
+    }
+
+}

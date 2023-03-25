@@ -80,19 +80,6 @@ hr {
     color: #4EA4DC;
 }
 
-/* #inputName{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border: 1px solid #dadce0;
-    border-radius: 7px;
-    font-size: 16px;
-    padding: 0 20px;
-    outline: none;
-    background: none;
-    z-index: 1;
-} */
-
 .inputContainer{
     /* position: relative; */
     height: 45px;
@@ -116,7 +103,7 @@ hr {
 }
 
 ::placeholder {
-    color: rgba(0, 0, 0, 0.2);
+    color: rgba(0, 0, 0, 0.2);   
 }
 
 .inputContainer p {
@@ -133,43 +120,16 @@ hr {
     color: red;
 }
 
-/* input:checked + .cek { */
-    /* background-color: red; */
-/* } */
-
-/* .cek {
-    border-radius: 0px;
-} */
-
-/* input[type="checkbox"] {
-    outline: 1.5px solid red;
-    border-radius: 7px;
-} */
-
-/* input[type=checkbox]:focus
-{
-    outline: 1px solid red;
-    border-radius: 7px;
-} */
-
-/* input[type=checkbox]
-{
-    background-color: #DDD;
-    border-radius: 2px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    width: 17px;
-    height: 17px;
-    cursor: pointer;
-    position: relative;
-    top: 5px;
-}
-
-input[type=checkbox]:checked
-{
-    background-color: #409fd6;
-    background: #409fd6 url("data:image/gif;base64,R0lGODlhCwAKAIABAP////3cnSH5BAEKAAEALAAAAAALAAoAAAIUjH+AC73WHIsw0UCjglraO20PNhYAOw==") 3px 3px no-repeat;
+/* .label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    padding: 0 4px;
+    background-color: white;
+    color: #dadce0;
+    font-size: 16px;
+    transition: 0.5s;
+    z-index: 0;
 } */
 
 .buttonSubmit {
@@ -201,12 +161,12 @@ input[type=checkbox]:checked
     margin-top: 5px;
 }
 
-.return:hover {
-    opacity: 70%;
+.btn-returnSignUp {
+    text-decoration: none;
 }
 
-.btn-returnLogin {
-    text-decoration: none;
+.btn-returnSignUp:hover {
+    opacity: 70%;
 }
 
 .imgTeen {
@@ -220,10 +180,6 @@ input[type=checkbox]:checked
     width: 150px;
     display: block;
 }
-
-/* .show-red {
-    border: 2px solid red;
-} */
 
 /* FOOTER */
 .footer {
@@ -287,7 +243,7 @@ input[type=checkbox]:checked
     }
     
     .img {
-        margin-bottom: 10px;
+        margin-bottom: 10px !important;
     }
     
     .img img {
@@ -299,45 +255,45 @@ input[type=checkbox]:checked
     }
     
     .the {
-        width: 100%;
+        width: 100% !important;
         font-size: 13px !important;
     }
     
     .the hr {
-        margin: 1%;
+        margin: 1% !important;
         width: 20px !important;
     }
     
     .right-container {
-        width: 80%;
-        height: 60%;
-        margin-bottom: 18%;
+        width: 80% !important;
+        height: 60% !important;
+        margin-bottom: 18% !important;
     }
     
     hr {
-        margin-bottom: 20px !important;
+        margin-bottom: 25px !important;
     }
     
     .form {
-        align-items: center;
+        align-items: center !important;
         width: 350px !important;
         padding: 20px 40px !important;
     }
     
     .title {
         font-size: 20px !important;
-        margin-bottom: 15px !important;
+        margin-bottom: 20px !important;
     }
     
     .inputContainer{
         height: 40px !important;
-        width: 100%;
-        margin-bottom: 13px !important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
     }
     
     .input {
-        height: 100%;
-        width: 100%;
+        height: 100% !important;
+        width: 100% !important;
         font-size: 13px !important;
         padding: 0 18px !important;
     }
@@ -356,7 +312,7 @@ input[type=checkbox]:checked
     
     .buttonSubmit {
         padding: 12px !important;
-        width: 100%;
+        width: 100% !important;
         font-size: 13px !important;
         margin-top: 18px !important;
     }

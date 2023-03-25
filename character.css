@@ -3,16 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-
 /* NAVIGATION BAR */
 .logo-menu{
     position: fixed;
-    background-image: url('assets/Section\ 1.png');
+    /* background-image: url('assets/Section1.png'); */
     background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 11vh;
     display: flex;
     gap: 5vw;
+    z-index: 1;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.drop-down {
+    display: none;
 }
 
 .logo {
@@ -50,43 +58,235 @@
 
 /* SECTION ONE */
 .section-one{
-    background-image: url(homeAsset/home.jpg);
-    background-size: cover;
+    background-image: url(character/monstadt/monstadt.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
     width: 100vw;
-    height: 100vh;
+    height: 120vh;
+    /* justify-content: center; */
 }
 
-.menu{
-    align-items: center;
+.trapesium{
+    background-image: url(character/trapesium.png);
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 120vh;
     display: flex;
+    flex-direction: column;
+    position: relative;
+    /* margin-bottom: 0; */
+}
+
+.diamond{
+    background-image: url(character/diamond.png);
+    background-size: 100% 100%;
+    width: 20vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+}
+
+#character-photo1{
+    background-image: url();
+    /* background-color: black; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 150%;
+}
+
+.character-detail{
+    /* background-color: black; */
     width: 100%;
-    gap: 5vw;
-    margin-left: 5vw;
+    height: 90%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
 }
 
-.menu-button a{
-    text-decoration: none;
+.character-description{
+    /* background-color: #6FE5FF; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 50%;
+    margin-left: 5%;
+    margin-bottom: 15%;
+}
+
+.character-title{
+   width: 100%;
+   height: 30%;
+   top: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 4vh;
+   /* background-color: #6FE5FF;  */
+}
+
+.character-title h1{
+    text-shadow: 1px 1px 5px black;
+    font-size: 50px;
     color: white;
-    opacity: .5;
-    transition: all 200ms;
-    width: auto;
 }
 
-.menu-button a:hover{
-    opacity: 1;
-    border-top: .3vw solid #6FE5FF;
-    border-bottom: 0 solid transparent;
+.character-name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.character-name h1{
+    text-shadow: 1px 1px 5px black;
+    /* border-top: 5px solid transparent; */
+    border-top: 5px solid #F5B466;
+    font-size: 50px;
+    color: white;
+}
+
+.description{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: left;
+    /* bottom: 20%; */
+    /* background-color: blueviolet; */
+}
+
+.desc-background{
+    width: 80%;
+    height: 30vh;
+    background-color: rgba(0, 0, 0, 0.498);
+    display: flex;
+    gap: 2vw;
+}
+
+.description-content h4{
+    text-shadow: 1px 1px 5px black;
+    margin: auto;
+    letter-spacing: 1px;
+    opacity: 1; 
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0);
+    color: white;
+    font-size: 20px;
+    z-index: 5;
+}
+
+.slider{
+    width: 100%;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.459);
+    display: flex;
+    gap: 5vw;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+}
+
+/* SECTION TWO */
+.section-two{
+    background-image: url(character/liyue/liyue.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 120vh;
+    /* justify-content: center; */
+}
+
+#character-photo2{
+    background-image: url();
+    /* background-color: black; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 150%;
+}
+
+/* SECTION THREE */
+.section-three{
+    background-image: url(character/inazuma/inazuma.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 120vh;
+    /* justify-content: center; */
+}
+
+#character-photo3{
+    background-image: url();
+    /* background-color: black; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 150%;
+}
+
+/* SECTION FOUR */
+.section-four{
+    background-image: url(character/sumeru/sumeru.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 120vh;
+    /* justify-content: center; */
+}
+
+#character-photo4{
+    background-image: url(character/sumeru/tighnariPhoto.png);
+    /* background-color: black; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 150%;
 }
 
 /* FOOTER */
-.footer{
-    background-image: black;
-    background-size: 100% 100%;
+.footer {
+    background-color: black;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    font-family: 'Roboto';
+    font-weight: 100;
 }
 
-.footer img{
+.logoImg img {
+    width: 150px;
+}
+
+.box {
     display: flex;
-    position: relative;
-    width: 100%;
+    flex-direction: row;
+    gap: 3vw;
+    color: white;
+    font-size: 14px;
+}
+
+.imgTeen2 img{
+    width: 170px;
+}
+
+.sentence {
+    width: 90%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.hoyo img {
+    width: 300px;
+}
+
+.copyright {
+    color: white;
+    font-size: 12px;
 }

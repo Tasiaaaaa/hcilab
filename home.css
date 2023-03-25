@@ -16,6 +16,14 @@
     gap: 5vw;
 }
 
+.hamburger-menu {
+    display: none;
+}
+
+.drop-down {
+    display: none;
+}
+
 .logo {
     display: flex;
     width: 25%;
@@ -552,4 +560,768 @@
     color: white;
     font-size: 12px;
     /* margin-bottom: 65px; */
+}
+
+
+@media screen and (max-width: 1024px) {
+    /* NAVIGATION BAR */
+    .logo-menu{
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+        height: 13vh;
+        gap: 5vw;
+        z-index: 1;
+    }
+
+    .hamburger-menu {
+        display: block;
+        max-width: 50%;
+        margin-left: 5%;
+    }
+
+    .hamburger-menu img {
+        width: 50%;
+    }
+
+    .active{
+        display: none!important;
+    }
+
+    .drop-down{
+        position: fixed;
+        top: 13%;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        width: 30%;
+    }
+
+    .drop-down a {
+        text-decoration: none;
+        color: white;
+        padding: 0.5em;
+    }
+
+    .logo {
+        width: 25%;
+        margin-right: 5%;
+    }
+
+    .logo img {
+        width: 100%;
+        height: 9vh;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .drop-down a {
+        border-bottom: 1.3px solid rgba(0, 0, 0, 0.7);
+    }
+
+    .about {
+        border-bottom: none !important;
+    }
+}
+
+
+@media screen and (max-width: 426px) {
+    /* NAVIGATION BAR */
+    .logo img {
+        width: 100% !important;
+    }
+
+    /* SECTION ONE */
+    .section-one {
+        width: 100vw !important;
+        height: 100vh !important;
+    }
+
+    .container-mid {
+        width: 100% !important;
+        height: 40% !important;
+        gap: 4vh !important;
+    }
+
+    .button-play {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35% !important;
+    }
+
+    .play1 {
+        opacity: 0 !important;
+    }
+
+    .play2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1 !important;
+    }
+
+    .play2 img {
+        width: 60% !important;
+    }
+
+    .mid-text {
+        font-size: 12px !important;
+    }
+
+    .box-mid {
+        width: 100% !important;
+        gap: 2vw !important;
+    }
+
+    .ps4 {
+        width: 23% !important;
+        opacity: .5 !important;
+    }
+
+    .ps4 img {
+        width: 100% !important;
+    }
+
+    .appStore {
+        width: 23% !important;
+        opacity: .5 !important;
+    }
+
+    .appStore img {
+        width: 100% !important;
+    }
+
+    .googlePlay {
+        width: 23% !important;
+        opacity: .5;
+    }
+
+    .googlePlay img {
+        width: 100% !important;
+    }
+
+    .windows {
+        width: 23% !important;
+        opacity: .5;
+    }
+
+    .windows img {
+        width: 100% !important;
+    }
+
+    .imgTeen {
+        position: absolute;
+        bottom: 0% !important;
+        left: 0% !important;
+    }
+
+    .imgTeen img {
+        height: 65px !important;
+        width: 110px !important;
+        display: block;
+    }
+
+
+    /* SECTION TWO */
+    .section-two {
+        background-size: cover;
+        width: 100% !important;
+        height: 100vh !important;
+    }
+
+    .judul-newChar {
+        font-size: 10px !important;
+        gap: 2vw;
+        margin-top: 6%;
+    }
+
+    .judul-new-kiri {
+        width: 30% !important;
+    }
+
+    .judul-new-kiri img {
+        width: 100%;
+    }
+
+    .judul-new-kanan {
+        width: 30% !important;
+    }
+
+    .judul-new-kanan img {
+        width: 100%;
+    }
+
+    .judul-char-tengah {
+        width: 35% !important;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column-reverse !important;
+        justify-content: space-evenly !important;
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    .detail {
+        margin-bottom: 5%;
+        width: 70% !important;
+        height: 50% !important;
+        /* border: 2px solid blue; */
+    }
+
+    .batas {
+        /* border: 2px solid aqua; */
+        margin-left: 0;
+    }
+
+    .ikon {
+        margin-right: 2% !important;
+        width: 13% !important;
+        /* border: 3px solid orange; */
+    }
+
+    .name h1 {
+        font-size: 20px !important;
+    }
+
+    .description {
+        font-weight: 450 !important;
+        font-size: 15px !important;
+        line-height: 4vh !important;
+        width: 100% !important;
+        /* border: 3px solid salmon; */
+    }
+
+    .box-ganti-char {
+        justify-content: center;
+        /* border: 2px solid blue; */
+    }
+
+    .btn-prev, .btn-next {
+        /* border: 2px solid brown; */
+        width: 7% !important;
+    }
+
+    .btn-prev img{
+        /* border: 2px solid purple; */
+        width: 100% !important;
+    }
+
+    .btn-ganti-char {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40% !important;
+        /* border: 2px solid green; */
+    }
+
+    .btn-next img {
+        width: 100%;
+        /* border: 2px solid purple; */
+    }
+
+    .character-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 60% !important;
+        margin-top: 6% !important;
+        /* position: relative; */
+    }
+
+    .img-belakang {
+        position: absolute;
+        width: 48% !important;
+        margin-left: 19% !important;
+    }
+
+    .img-belakang img {
+        width: 100% !important;
+    }
+
+    .img-utama {
+        position: relative;
+        width: 45% !important;
+    }
+
+    .img-utama img {
+        width: 100%;
+    }
+
+    .circle-img {
+        position: absolute;
+        left: 18% !important;
+        margin-top: 30% !important;
+        width: 28% !important;
+    }
+
+
+    /* SECTION THREE */
+    .section-three {
+        width: 100vw !important;
+        height: 100vh !important;
+        background-position: center;
+        gap: 7vh !important;
+    }
+
+    .judul-newWeapon {
+        font-size: 12px !important;
+        gap: 2vw;
+        margin-top: 6%;
+    }
+
+    .judul-weapon-tengah {
+        width: 35% !important;
+        text-align: center;
+    }
+
+    .before-weapon {
+        background-size: 100% 100%;
+        width: 85% !important;
+        height: 70% !important;
+        flex-direction: column;
+    }
+
+    .beacon {
+        width: 60% !important;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+    }
+
+    .beacon img {
+        width: 55% !important;
+    }
+
+    .box-beacon {
+        position: absolute;
+        background-size: 100% 100%;
+        width: 60% !important;
+        height: 25% !important;
+        bottom: 20% !important;
+        right: 7% !important;
+    }
+
+    .bungkus-text-beacon {
+        width: 80% !important;
+        bottom: 15% !important;
+        left: 5% !important;
+    }
+
+    .text-beacon h1 {
+        font-size: 13px !important;
+    }
+
+    .star-beacon {
+        width: 15% !important;
+    }
+
+    .mailed {
+        width: 60% !important;
+        justify-content: flex-end;
+    }
+
+    .mailed img {
+        width: 55% !important;
+    }
+
+    .box-mailed {
+        width: 50% !important;
+        height: 15% !important;
+        left: 19% !important;
+        top: 31% !important;
+    }
+
+    .bungkus-text-mailed {
+        width: 90% !important;
+        bottom: 27% !important;
+    }
+
+    .text-mailed h1 {
+        font-size: 13px !important;
+    }
+
+    .star-mailed {
+        width: 15% !important;
+    } 
+
+    /* FOOTER */
+    .footer {
+        gap: 5vh;
+    }
+
+    .logoImg img {
+        width: 130px !important;
+    }
+
+    .box {
+        gap: 4vw;
+        font-size: 10px !important;
+    }
+
+    .imgTeen2 img{
+        width: 130px !important;
+    }
+
+    .sentence {
+        width: 90% !important;
+        font-size: 10px !important;
+    }
+
+    .hoyo img {
+        width: 200px !important;
+    }
+
+    .copyright {
+        font-size: 9px !important;
+    } 
+}
+
+
+@media screen and (max-width: 769px) {
+    /* NAVIGATION BAR */
+    .logo img {
+        width: 77%;
+    }
+
+    /* SECTION ONE */
+    .container-mid {
+        height: 50%;
+    }
+
+    .button-play {
+        height: 40%;
+    }
+
+    .play1 {
+        opacity: 0;
+    }
+
+    .play2 {
+        opacity: 1;
+    }
+
+    .play2 img {
+        width: 70%;
+    }
+
+    .mid-text {
+        font-size: 15px;
+    }
+
+    .box-mid {
+        width: 90%;
+        justify-content: space-evenly;
+    }
+
+    .ps4 {
+        width: 20%;
+        opacity: .5;
+    }
+
+    .ps4 img {
+        width: 100%;
+    }
+
+    .appStore {
+        width: 20%;
+        opacity: .5;
+    }
+
+    .appStore img {
+        width: 100%;
+    }
+
+    .googlePlay {
+        width: 20%;
+        opacity: .5;
+    }
+
+    .googlePlay img {
+        width: 100%;
+    }
+
+    .windows {
+        width: 20%;
+        opacity: .5;
+    }
+
+    .windows img {
+        width: 100%;
+    }
+
+    .imgTeen {
+        position: absolute;
+        bottom: 0%;
+        left: 0%;
+    }
+
+    .imgTeen img {
+        height: 75px;
+        width: 130px;
+        display: block;
+    }
+
+
+    /* SECTION TWO */
+    .section-two {
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .judul-newChar {
+        font-size: 15px;
+        gap: 2vw;
+        margin-top: 4%;
+    }
+
+    .judul-new-kiri {
+        width: 40%;
+    }
+
+    .judul-new-kiri img {
+        width: 100%;
+    }
+
+    .judul-new-kanan {
+        width: 40%;
+    }
+
+    .judul-new-kanan img {
+        width: 100%;
+    }
+
+    .judul-char-tengah {
+        width: 35%;
+        text-align: center;
+    }
+
+    .content {
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 100%;
+    }
+
+    .detail {
+        /* margin-bottom: 5%; */
+        width: 50%;
+        height: 50%;
+        margin-top: 4%;
+        /* border: 2px solid blue; */
+    }
+
+    .batas {
+        /* border: 2px solid aqua; */
+        margin-left: 0;
+    }
+
+    .ikon {
+        margin-right: 2%;
+        width: 9%;
+        /* border: 3px solid orange; */
+    }
+
+    .name h1 {
+        font-size: 18px;
+    }
+
+    .description {
+        font-weight: 450;
+        font-size: 13px;
+        line-height: 4vh;
+        width: 100%;
+        /* border: 3px solid salmon; */
+    }
+
+    .box-ganti-char {
+        justify-content: center;
+        margin-bottom: 20%;
+        /* border: 2px solid blue; */
+    }
+
+    .btn-prev, .btn-next {
+        /* border: 2px solid brown; */
+        width: 6%;
+    }
+
+    .btn-prev img{
+        /* border: 2px solid purple; */
+        width: 100%;
+    }
+
+    .btn-ganti-char {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 40%;
+        /* border: 2px solid green; */
+    }
+
+    .btn-next img {
+        width: 100%;
+        /* border: 2px solid purple; */
+    }
+
+    .character-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40%;
+        margin-top: 2%;
+        /* position: relative; */
+    }
+
+    .img-belakang {
+        position: absolute;
+        width: 48%;
+        margin-left: 19%;
+    }
+
+    .img-belakang img {
+        width: 100%;
+    }
+
+    .img-utama {
+        position: relative;
+        width: 45%;
+    }
+
+    .img-utama img {
+        width: 100%;
+    }
+
+    .circle-img {
+        position: absolute;
+        left: 18%;
+        margin-top: 30%;
+        width: 28%;
+    }
+
+
+    /* SECTION THREE */
+    .section-three {
+        width: 100vw;
+        height: 100vh;
+        background-position: center;
+        gap: 5vh;
+    }
+
+    .judul-newWeapon {
+        font-size: 18px;
+        gap: 2vw;
+        margin-top: 4%;
+    }
+
+    .judul-weapon-tengah {
+        width: 35%;
+        text-align: center;
+    }
+
+    .before-weapon {
+        background-size: 100% 100%;
+        width: 90%;
+        height: 70%;
+    }
+
+    .beacon {
+        width: 60%;
+    }
+
+    .beacon img {
+        width: 55%;
+    }
+
+    .box-beacon {
+        position: absolute;
+        background-size: 100% 100%;
+        width: 45%;
+        height: 20%;
+        bottom: 26%;
+    }
+
+    .bungkus-text-beacon {
+        width: 80%;
+        bottom: 15%;
+        left: 5%;
+    }
+
+    .text-beacon h1 {
+        font-size: 18px;
+    }
+
+    .star-beacon {
+        width: 13%;
+    }
+
+    .mailed {
+        width: 60%;
+        justify-content: center;
+    }
+
+    .mailed img {
+        width: 55%;
+    }
+
+    .box-mailed {
+        width: 45%;
+        height: 11%;
+        top: 33%;
+    }
+
+    .bungkus-text-mailed {
+        width: 90%;
+        bottom: 20%;
+    }
+
+    .text-mailed h1 {
+        font-size: 18px;
+    }
+
+    .star-mailed {
+        width: 13%;
+    } 
+
+
+
+    /* FOOTER */
+    .footer {
+        gap: 5vh;
+    }
+
+    .logoImg img {
+        width: 160px;
+    }
+
+    .box {
+        gap: 4vw;
+        font-size: 13px;
+    }
+
+    .imgTeen2 img{
+        width: 150px;
+    }
+
+    .sentence {
+        width: 90%;
+        font-size: 12px;
+    }
+
+    .hoyo img {
+        width: 220px;
+    }
+
+    .copyright {
+        font-size: 11px;
+    }  
 }

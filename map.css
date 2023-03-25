@@ -4,35 +4,50 @@
     box-sizing: border-box;
 }
 
-/* NAVIGATION BAR */
-
-.nav {
-    position: fixed;
+.main-display{
+    position: absolute;
     z-index: 5;
+    border: 5px solid red;
+    width: 100vw;
 }
 
+/* NAVIGATION BAR */
 .logo-menu{
     position: fixed;
-    background-color: black;
+    /* background-image: url('assets/Section1.png'); */
+    background-color: rgba(0, 0, 0, 0.5);
     width: 100%;
-    opacity: .7;
+    height: 11vh;
     display: flex;
-    font-size: large;
+    gap: 5vw;
+    z-index: 1;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+.drop-down {
+    display: none;
+}
+
+.logo {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img{
-    padding: 2%;
-    width: 15vw;
-    height: 10vh;
+    width: 70%;
+    height: 9vh;
 }
-
 
 .menu{
     align-items: center;
     display: flex;
     width: 100%;
     gap: 5vw;
-    margin-left: 5vw;
 }
 
 .menu-button a{
@@ -49,23 +64,353 @@
     border-bottom: 0 solid transparent;
 }
 
+.regions{
+    z-index: 5;
+}
+
 /* SECTION ONE */
 .section-one{
-    background-image: url(homeAsset/home.jpg);
-    background-size: cover;
+    background-image: url(mapAsset/moonstadt/moonstadtMap.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 120vh;
+}
+
+.region-title{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+}
+
+.region-title h1{
+    color: white;
+    font-size: 5vw;
+}
+
+.region-detail{
+    margin: auto;
+    width: 50%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.region-detail h4{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.more-information{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8vw;
+}
+
+.more-information-button{
+   background-color: white;
+    width: 15%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #4EA4DC;
+    border: none;
+    transition: all 200ms;
+}
+
+.more-information-button:hover{
+    background-color: #4EA4DC;
+    width: 15%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border: none;
+}
+
+/* SECTION TWO */
+.section-two{
+    background-image: url(mapAsset/liyue/liyueMap.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 120vh;
+}
+
+/* SECTION THREE */
+.section-three{
+    background-image: url(mapAsset/sumeru/sumeruMap.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 120vh;
+}
+
+/* SECTION FOUR */
+.section-four{
+    background-image: url(mapAsset/inazuma/inazumaMap.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 120vh;
+}
+
+/* POP UP TEMPLATE */
+.regions-popup{
+    position: fixed;
+    z-index: 99;
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+.region-popup{
+    background-image: url(mapAsset/regionPopupBG.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 200vh;
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    /* margin-bottom: 10%; */
+}
+
+
+.region-popup-header{
+    background-image: url(mapAsset/regionPopupTitle.png);
+    background-size: contain;
+    width: 95%;
+    height: 8%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+    /* background-color: #6FE5FF; */
+}
+
+.region-popup-title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 18%; */
+    align-items: center;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.closeButton{
+    width: 10%;
+    top: 10%;
+    right: 22.5%;
+    /* height: 100%; */
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    position: absolute;
+    /* background-color: purple; */
+}
+
+.closeButton img{
+    width: 30%;
+    /* height: 35%; */
+}
+
+.region-popup-detail{
+    /* position: relative; */
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.region-popup-detail-title{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #4EA4DC; */
+}
+
+.region-popup-detail-title h4{
+    font-size: 1.5rem;
+    border-bottom: 2px solid #F5B466;
+
+}
+
+.region-popup-detail-content{
+    width: 80%;
+    height: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #4EA4DC; */
+}
+
+/* SECTION ONE POP UP */
+#section-one-popup{
+    display: none;
+}
+
+#region-popup-detail-photo1-1{
+    background-image: url(mapAsset/moonstadt/starfellValley.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+#region-popup-detail-photo1-2{
+    background-image: url(mapAsset/moonstadt/dragonspine.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* SECTION TWO POPUP */
+#section-two-popup{
+    display: none;
+}
+
+#region-popup-detail-photo2-1{
+    background-image: url(mapAsset/liyue/theChasm.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+#region-popup-detail-photo2-2{
+    background-image: url(mapAsset/liyue/theHiddenPalace.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+/* SECTION THREE POPUP */
+#section-three-popup{
+    display: none;
+}
+
+#region-popup-detail-photo3-1{
+    background-image: url(mapAsset/sumeru/vanarana.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+#region-popup-detail-photo3-2{
+    background-image: url(mapAsset/sumeru/ardaviValley.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+/* SECTION FOUR POPUP */
+#section-four-popup{
+    display: none;
+}
+
+#region-popup-detail-photo4-1{
+    background-image: url(mapAsset/inazuma/yasioriIsland.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
+}
+
+#region-popup-detail-photo4-2{
+    background-image: url(mapAsset/inazuma/watatsumiIsland.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 75%;
+    height: 75%;
+    display: flex;
+    justify-content: center;
 }
 
 /* FOOTER */
-.footer{
-    background-image: black;
-    background-size: 100% 100%;
+.footer {
+    background-color: black;
     width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6vh;
+    font-family: 'Roboto';
+    font-weight: 100;
 }
 
-.footer img{
+.logoImg img {
+    width: 150px;
+}
+
+.box {
     display: flex;
-    position: relative;
-    width: 100%;
+    flex-direction: row;
+    gap: 3vw;
+    color: white;
+    font-size: 14px;
+}
+
+.imgTeen2 img{
+    width: 170px;
+}
+
+.sentence {
+    width: 90%;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+}
+
+.hoyo img {
+    width: 300px;
+}
+
+.copyright {
+    color: white;
+    font-size: 12px;
 }

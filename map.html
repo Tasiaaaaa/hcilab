@@ -8,42 +8,317 @@
     <link rel="stylesheet" href="map.css">
 </head>
 <body>
-    <div class = "nav">
+    <div class="main-display">
         <div class="logo-menu">
-            <div class="logo">
-                <img src="homeAsset/Jenshin.png" alt="Jenshin Impactz">
+            <div class="hamburger-menu">
+                <a href="javascript:void(0);" class="icon" onclick="openNav()">
+                    <img src="homeAsset/hamburger-menu.png" alt="">
+                  </a>
             </div>
+            <div class="logo">
+                <img src="aboutAsset/LogoJenshinImpekz.png" alt="Jenshin Impactz">
+            </div>
+            
             <div class="menu">
                 <div class="menu-button">
                     <a href="home.html">HOME</a>
                 </div>
-
+                
                 <div class="menu-button">
                     <a href="character.html">CHARACTER</a>
                 </div>
-
+                
                 <div class="menu-button">
                     <a href="register.html">REGISTER</a>
                 </div>
-
+                
                 <div class="menu-button">
                     <a href="map.html">MAPS</a>
                 </div>
-
+                
                 <div class="menu-button">
                     <a href="about.html">ABOUT</a>
+                </div> 
+            </div>
+            
+        </div>
+    
+        <div class="drop-down active" id="dropdown">
+            <a href="home.html">HOME</a>
+            <a href="character.html">CHARACTER</a>
+            <a href="register.html">REGISTER</a>
+            <a href="map.html">MAPS</a>
+            <a href="about.html" class="about">ABOUT</a>
+        </div>
+    
+        <div class="regions">
+    
+            <div class="section-one">
+                <div class="region-title">
+                    <div class="decor">
+                        <img src="mapAsset/decorLeft.png" alt="">
+                    </div>
+                    <h1>MONSTADT</h1>
+                    <div class="decor">
+                        <img src="mapAsset/decorRight.png" alt="">
+                    </div>
                 </div>
-
+        
+                <div class="region-detail">
+                    <h4>Mondstadt is one of the seven regions in Teyvat, and the first in which the Traveler starts to look for their lost sibling. It is the city-state that worships Lord Barbatos, the Anemo Archon.</h4>
+                </div>
+        
+                <div class="more-information">
+                    <button class = "more-information-button" id="more-information-button1">More Information</button>
+                </div>
+            </div>
+        
+            <div class="section-two">
+                <div class="region-title">
+                    <div class="decor">
+                        <img src="mapAsset/decorLeft.png" alt="">
+                    </div>
+                    <h1>LIYUE</h1>
+                    <div class="decor">
+                        <img src="mapAsset/decorRight.png" alt="">
+                    </div>
+                </div>
+        
+                <div class="region-detail">
+                    <h4>A bountiful harbor that lies in the east of Teyvat. Mountains stand tall and proud alongside the stone forest, that, together with the open plains and lively rivers, make up Liyue's bountiful landscape, which shows its unique beauty through each of the four seasons.</h4>
+                </div>
+                
+                <div class="more-information" >
+                    <button class = "more-information-button" id="more-information-button2">More Information</button>
+                </div>
+            </div>
+            
+            <div class="section-three">
+                <div class="region-title">
+                    <div class="decor">
+                        <img src="mapAsset/decorLeft.png" alt="">
+                    </div>
+                    <h1>SUMERU</h1>
+                    <div class="decor">
+                        <img src="mapAsset/decorRight.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="region-detail">
+                    <h4>Sumeru is one of the seven regions in Teyvat. It is the nation that worships Lesser Lord Kusanali, the Dendro Archon. It is renowned as the center of learning and houses the Sumeru Akademiya.</h4>
+                </div>
+                
+                <div class="more-information">
+                    <button class = "more-information-button" id="more-information-button3">More Information</button>
+                </div>
+            </div>
+            
+            <div class="section-four">
+                <div class="region-title">
+                    <div class="decor">
+                        <img src="mapAsset/decorLeft.png" alt="">
+                    </div>
+                    <h1>INAZUMA</h1>
+                    <div class="decor">
+                        <img src="mapAsset/decorRight.png" alt="">
+                    </div>
+                </div>
+                
+                <div class="region-detail">
+                    <h4>Inazuma (Japanese: Inazuma) is one of the seven regions in Teyvat. It is an archipelagic region that worships Raiden Shogun, the Electro Archon, who is also the leader of its governing body, the Inazuma Shogunate. Inazuma is located approximately 4 km southeast from Liyue Harbor and is a close neighbor with the Dark Sea. a</h4>
+                </div>
+                
+                <div class="more-information">
+                    <button class = "more-information-button" id="more-information-button4">More Information</button>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer">
+            <div class="logoImg">
+                <img src="aboutAsset/LogoJenshinImpekz.png" alt="Jenshin Impactz">
+            </div>
+            
+            <div class="box">
+                <div class="privacy">
+                    <p>Privacy Policy</p>
+                </div>
+                <div class="terms">
+                    <p>Terms of Service</p>
+                </div>
+                <div class="about">
+                    <p>About Us</p>
+                </div>
+                <div class="contact">
+                    <p>Contact Us</p>
+                </div>
+            </div>
+            
+            <div class="imgTeen2">
+                <img src="assets/teenEsrb.png" alt="">
+            </div>
+            
+            <div class="sentence">
+                <p>"PlayStation Family Mark," "PS5 logo" and "PS4 logo" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.</p>
+                <p>Epic, Epic Games, Epic games Store, the Epic Games Store logo, and Epic Online Services are trademarks and/or registered trademarks of Epic Games. All other trademarks are the property of their respective owners.</p>
+            </div>
+    
+            <div class="hoyo">
+                <img src="assets/hoyoverse.png" alt="">
+            </div>
+    
+            <div class="copyright">
+                <p>Copyright. All Rights Reserved.</p>
             </div>
         </div>
     </div>
+    
+    <div class="regions-popup" id="regions-popup">
+        <div class="region-popup" id="section-one-popup">
+            <div class="region-popup-header">
+                <div class="region-popup-title">
+                    <h1>MONSTADT</h1>
+                </div>
+                <div class="closeButton" id="closeButton1">
+                    <img src="mapAsset/closeButton.png" alt="">
+                </div>
+            </div>
+            
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Starfell Valley</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo1-1">
 
-    <div class="section-one">
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Starfell Valley is an area located in Mondstadt. It is considered the most diverse region of Mondstadt, spreading far from the tip of Stormbearer Point to the ends of the Whispering Woods. It is also home to the City of Mondstadt in Cider Lake. The area also consists of abundant lakes and tree variety.</p>
+                </div>
+            </div>
+
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Dragonspine</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo1-2">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Dragonspine, historically known as Vindagnyr, is an area located in Mondstadt.
+                        It is a vast mountain, engulfed with ancient ruins and snow-capped areas, and also containing the remains of Durin. It was named Vindagnyr prior to Durin's fall.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="region-popup" id="section-two-popup">
+            <div class="region-popup-header">
+                <div class="region-popup-title">
+                    <h1>LIYUE</h1>
+                </div>
+                <div class="closeButton" id="closeButton2">
+                    <img src="mapAsset/closeButton.png" alt="">
+                </div>
+            </div>
+            
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>The Chasm</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo2-1">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Starfell Valley is an area located in Mondstadt. It is considered the most diverse region of Mondstadt, spreading far from the tip of Stormbearer Point to the ends of the Whispering Woods. It is also home to the City of Mondstadt in Cider Lake. The area also consists of abundant lakes and tree variety.</p>
+                </div>
+            </div>
+
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Hidden Palace</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo2-2">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Dragonspine, historically known as Vindagnyr, is an area located in Mondstadt.
+                        It is a vast mountain, engulfed with ancient ruins and snow-capped areas, and also containing the remains of Durin. It was named Vindagnyr prior to Durin's fall.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="region-popup" id="section-three-popup">
+            <div class="region-popup-header">
+                <div class="region-popup-title">
+                    <h1>SUMERU</h1>
+                </div>
+                <div class="closeButton" id="closeButton3">
+                    <img src="mapAsset/closeButton.png" alt="">
+                </div>
+            </div>
+            
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Vanarana</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo3-1">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Vanarana is an area and a subarea located in Vanarana, Dharma Forest, Sumeru. There are two different versions of Vanarana: the one that exists in reality, and the dream version where the Aranara live (which is called Mahavanaranapna).</p>
+                </div>
+            </div>
+
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Ardavi Valley</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo3-2">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>This valley was formed by the erosion caused by the great river Ardravi that cuts through Sumeru. One who follows the river's flow can reach the southern shore.Though it is Sumeru's great waterborne mercantile route, the care of the Forest Watchers maintains the purity of natural life in the area, and many lovely creatures dwell there.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="region-popup" id="section-four-popup">
+            <div class="region-popup-header">
+                <div class="region-popup-title">
+                    <h1>INAZUMA</h1>
+                </div>
+                <div class="closeButton" id="closeButton4">
+                    <img src="mapAsset/closeButton.png" alt="">
+                </div>
+            </div>
+            
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Yasiori Island</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo4-1">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Yashiori Island (Japanese: ヤシオリ島 Yashiori-jima) is an area located in Inazuma.
+                        At some point within the last two thousand years, the island was attacked by the Watatsumi Omikami Orobashi no Mikoto, an ancient god who created Watatsumi Island.</p>
+                </div>
+            </div>
+
+            <div class="region-popup-detail">
+                <div class="region-popup-detail-title">
+                    <h4>Watatsumi Island</h4>
+                </div>
+                <div class="region-popup-detail-photo" id="region-popup-detail-photo4-2">
+
+                </div>
+                <div class="region-popup-detail-content">
+                    <p>Watatsumi Island (Japanese: 海祇わたつみ島じま Watatsumi-jima) is an area located in Inazuma.
+                        Among these islands, it is located the farthest and on the opposite end of Narukami Island. It is known for its dense foliage in breathtaking colors which are distinct from plants found elsewhere.</p>
+                </div>
+            </div>
+        </div>
         
     </div>
-
-    <div class="footer">
-        <img src="homeAsset/footer.png" alt="Footer">
-    </div>
+    <script src="map.js"></script>
 </body>
 </html>
